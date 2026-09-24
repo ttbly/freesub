@@ -5,41 +5,29 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: 172.67.147.209
+  server: 194.87.130.9
   port: 443
   udp: true
   type: vless
-  uuid: 38d6b629-64c2-4c31-a10d-26eb3a2a053d
+  uuid: 57a437c4-7eed-4ecf-bf50-5e4e35f71deb
+  flow: xtls-rprx-vision
   tls: true
-  servername: lhns3ww2-cxq-gj1vvobkepig4nopkc.hqu4v38hi9iftcp6mzfmx-3bmx.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /vl/cxl8Wn1ylnsk63nJ0?ed=2560
-    headers:
-      Host: lhns3ww2-cxq-gj1vvobkepig4nopkc.hqu4v38hi9iftcp6mzfmx-3bmx.workers.dev
-- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
-  server: 153.76.185.148
-  port: 3090
-  udp: true
-  type: vless
-  uuid: 1552d599-a036-4389-a5c0-bf14dfaddc1a
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
+  reality-opts:
+    public-key: pccR04wlWHqbXoRk19m56lzp3CdDFd6RqGEuWj5TrWk
+    short-id: 793bf4b257bbf247
+  servername: www.marktplaats.nl
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
-  - 🇨🇿 捷克 (Czech) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
-  - 🇨🇿 捷克 (Czech) 02 - xiaohe
 rules:
 - MATCH,PROXIES
