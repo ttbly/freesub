@@ -1,0 +1,47 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇨🇿 捷克 (Czech) 01 - xiaohe
+  server: 172.67.167.77
+  port: 443
+  udp: true
+  type: vless
+  uuid: cc08d2d0-8a7a-4469-81d2-c43704451271
+  tls: true
+  servername: 9tg-d0htbrb5e3tp0c-o7ix23cx0f.ftfgblgft6-1h2iv2oo4h0.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /vl/6871nrbnl9WsdAiOUInt
+    headers:
+      Host: 9tg-d0htbrb5e3tp0c-o7ix23cx0f.ftfgblgft6-1h2iv2oo4h0.workers.dev
+- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
+  server: 104.21.70.21
+  port: 8080
+  udp: true
+  type: vless
+  uuid: 6cc29a05-4828-4e48-a34a-20b7ada60e85
+  network: ws
+  ws-opts:
+    path: /OAZko425kNFF0PpQ
+    headers:
+      Host: testmikonim.hydrymhmdamyn7.workers.dev
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇨🇿 捷克 (Czech) 01 - xiaohe
+  - 🇨🇿 捷克 (Czech) 02 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇨🇿 捷克 (Czech) 01 - xiaohe
+  - 🇨🇿 捷克 (Czech) 02 - xiaohe
+rules:
+- MATCH,PROXIES
