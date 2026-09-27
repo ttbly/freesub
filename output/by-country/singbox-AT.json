@@ -33,15 +33,20 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇦🇹 奥地利 (Austria) 03 - xiaohe",
-      "server": "67.159.17.181",
-      "server_port": 30443,
-      "password": "0e1506b1-22a4-4b4f-8082-9ddd2efcd28e",
+      "server": "161.104.107.198",
+      "server_port": 43,
+      "uuid": "dc0d27ba-34d2-4c8b-9cba-9ddbbb632748",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "filesconvert.org",
-        "insecure": true
+        "server_name": "1bs-abs-more.ru",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        }
       }
     },
     {

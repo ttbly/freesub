@@ -25,13 +25,16 @@ proxies:
   servername: at.quattro-tech.ru
   client-fingerprint: random
 - name: 🇦🇹 奥地利 (Austria) 03 - xiaohe
-  server: 67.159.17.181
-  port: 30443
+  server: 161.104.107.198
+  port: 43
   udp: true
-  type: hysteria2
-  password: 0e1506b1-22a4-4b4f-8082-9ddd2efcd28e
-  sni: filesconvert.org
-  skip-cert-verify: true
+  type: vless
+  uuid: dc0d27ba-34d2-4c8b-9cba-9ddbbb632748
+  flow: xtls-rprx-vision
+  tls: true
+  servername: 1bs-abs-more.ru
+  skip-cert-verify: false
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
