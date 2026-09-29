@@ -4,32 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇺 卢森堡 (Luxembourg) 01 - xiaohe
-  server: 104.21.117.9
+- name: 🌐 其他地区 (Other) 01 - xiaohe
+  server: 188.114.97.6
   port: 443
   udp: true
   type: vless
-  uuid: 0926b50d-3a90-18dd-7c8e-0cf100000000
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   tls: true
-  servername: netlivpn4024.bgfjhd.workers.dev
+  servername: jp3.yohototo.top
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   network: ws
   ws-opts:
-    path: /
+    path: /tyxyws
     headers:
-      Host: netlivpn4024.bgfjhd.workers.dev
+      Host: jp3.yohototo.top
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇺 卢森堡 (Luxembourg) 01 - xiaohe
+  - 🌐 其他地区 (Other) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇺 卢森堡 (Luxembourg) 01 - xiaohe
+  - 🌐 其他地区 (Other) 01 - xiaohe
 rules:
 - MATCH,PROXIES
