@@ -13,7 +13,7 @@ proxies:
   sni: grape-test-italy.dynuddns.net
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
-  server: 162.249.127.136
+  server: 162.249.127.144
   port: 8443
   udp: true
   type: hysteria2
@@ -21,12 +21,18 @@ proxies:
   sni: hop-germany-september.dynuddns.com
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
-  server: 154.46.31.106
+  server: 46.28.67.55
   port: 443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
+  type: vless
+  uuid: d1a6a033-fdbd-46a6-a177-3370ba042b9f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU
+    short-id: d06d78e974491b6e
+  servername: www.cloudflare.com
+  client-fingerprint: qq
 - name: 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
   server: hy2-new.aspidnet.xyz
   port: 443
@@ -48,35 +54,6 @@ proxies:
   obfs: salamander
   obfs-password: c1b4086fea89914496c7e10967a419216566
 - name: 🇷🇴 罗马尼亚 (Romania) 06 - xiaohe
-  server: 103.126.51.38
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  sni: hopp-romania-new.roxa.org
-  skip-cert-verify: false
-- name: 🇷🇴 罗马尼亚 (Romania) 07 - xiaohe
-  server: 185.156.44.99
-  port: 443
-  udp: true
-  type: hysteria2
-  password: gf1:gfhysteria2024
-  sni: 185.156.44.99
-  skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 08 - xiaohe
-  server: 46.28.67.55
-  port: 443
-  udp: true
-  type: vless
-  uuid: d1a6a033-fdbd-46a6-a177-3370ba042b9f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU
-    short-id: d06d78e974491b6e
-  servername: www.cloudflare.com
-  client-fingerprint: safari
-- name: 🇷🇴 罗马尼亚 (Romania) 09 - xiaohe
   server: 146.70.124.85
   port: 443
   udp: true
@@ -89,19 +66,8 @@ proxies:
     short-id: fe24f8a0a560056e
   servername: www.datadoghq.com
   client-fingerprint: chrome
-- name: 🇷🇴 罗马尼亚 (Romania) 10 - xiaohe
-  server: 188.225.76.197
-  port: 443
-  udp: true
-  type: vless
-  uuid: 5cb9410c-1b31-48dc-b33f-cacd93722ffd
-  flow: xtls-rprx-vision
-  tls: true
-  servername: cdn-pl-exit.extazy.net
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇷🇴 罗马尼亚 (Romania) 11 - xiaohe
-  server: bl3fk52.sysopnova.art
+- name: 🇷🇴 罗马尼亚 (Romania) 07 - xiaohe
+  server: 193.163.203.253
   port: 443
   udp: true
   type: vless
@@ -113,8 +79,16 @@ proxies:
     short-id: 5ee019e02e6ed99a
   servername: yandex.ru
   client-fingerprint: chrome
-- name: 🇷🇴 罗马尼亚 (Romania) 12 - xiaohe
-  server: bogging-eyeteeth-fly.freesocks.work
+- name: 🇷🇴 罗马尼亚 (Romania) 08 - xiaohe
+  server: 185.156.44.99
+  port: 443
+  udp: true
+  type: hysteria2
+  password: gf1:gfhysteria2024
+  sni: 185.156.44.99
+  skip-cert-verify: true
+- name: 🇷🇴 罗马尼亚 (Romania) 09 - xiaohe
+  server: 154.46.31.106
   port: 443
   udp: true
   type: ss
@@ -134,9 +108,6 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 07 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 08 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 09 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 10 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 11 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 12 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -151,8 +122,5 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 07 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 08 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 09 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 10 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 11 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 12 - xiaohe
 rules:
 - MATCH,PROXIES
