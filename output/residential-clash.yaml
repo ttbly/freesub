@@ -4,7 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
+- name: 🇨🇦 加拿大 (Canada) 01 (家宽) - xiaohe
+  server: 172.67.219.50
+  port: 443
+  udp: true
+  type: vless
+  uuid: a5b1d1ec-327c-f1c5-5856-b34600000000
+  tls: true
+  servername: ez-541f9d.ezaccess1d3db24.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: ez-541f9d.ezaccess1d3db24.workers.dev
+- name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe
+  server: 145.239.30.17
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
   server: hinet1.2yly.com
   port: 24215
   udp: true
@@ -15,13 +36,7 @@ proxies:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe
-  server: test.keoplentuio.xyz
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇸🇬 新加坡 (Singapore) 03 (家宽) - xiaohe
+- name: 🇸🇬 新加坡 (Singapore) 04 (家宽) - xiaohe
   server: s3.huhiuh.space
   port: 18642
   udp: true
@@ -34,16 +49,18 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
+  - 🇨🇦 加拿大 (Canada) 01 (家宽) - xiaohe
   - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 03 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 04 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
+  - 🇨🇦 加拿大 (Canada) 01 (家宽) - xiaohe
   - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 03 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 04 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
