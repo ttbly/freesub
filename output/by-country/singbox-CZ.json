@@ -6,27 +6,34 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
-      "server": "188.114.97.6",
-      "server_port": 2053,
-      "uuid": "934f2038-17f8-4ec5-9204-8381e19fc6e3",
+      "server": "soskeynets.ghydgdbdbddvv.workers.dev",
+      "server_port": 443,
+      "uuid": "07821f66-cdb7-4c70-9de6-e230cffac470",
       "tls": {
         "enabled": true,
-        "server_name": "tight-bush-0bb4.bshxyyxhdjdggb.workers.dev",
-        "insecure": false
+        "server_name": "wgrcqwtkfyqujs43.ghydgdbdbddvv.workers.dev",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/eyJqdW5rIjoiVXFEMlhKZVY4dzNoTUtpZCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+        "path": "/vl/Li1khIHH3DNItJyzraemsPBQvu ",
         "headers": {
-          "Host": "tight-bush-0bb4.bshxyyxhdjdggb.workers.dev"
+          "Host": "wgrcqwtkfyqujs43.ghydgdbdbddvv.workers.dev"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 02 - xiaohe",
-      "server": "194.87.59.29",
-      "server_port": 2085,
+      "server": "153.76.185.159",
+      "server_port": 3090,
       "uuid": "ea723504-e8df-4f23-b35f-c93961d5128a",
       "transport": {
         "type": "grpc",
@@ -47,8 +54,8 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 04 - xiaohe",
-      "server": "153.76.185.163",
-      "server_port": 3090,
+      "server": "194.87.59.29",
+      "server_port": 2085,
       "uuid": "ea723504-e8df-4f23-b35f-c93961d5128a",
       "transport": {
         "type": "grpc",
@@ -66,7 +73,7 @@
         "server_name": "nlll.gaz-service.shop",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -91,7 +98,7 @@
         "server_name": "nlll.gaz-service.shop",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,

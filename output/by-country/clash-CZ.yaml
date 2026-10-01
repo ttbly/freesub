@@ -5,22 +5,23 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: 188.114.97.6
-  port: 2053
+  server: soskeynets.ghydgdbdbddvv.workers.dev
+  port: 443
   udp: true
   type: vless
-  uuid: 934f2038-17f8-4ec5-9204-8381e19fc6e3
+  uuid: 07821f66-cdb7-4c70-9de6-e230cffac470
   tls: true
-  servername: tight-bush-0bb4.bshxyyxhdjdggb.workers.dev
+  servername: wgrcqwtkfyqujs43.ghydgdbdbddvv.workers.dev
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoiVXFEMlhKZVY4dzNoTUtpZCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    path: '/vl/Li1khIHH3DNItJyzraemsPBQvu '
     headers:
-      Host: tight-bush-0bb4.bshxyyxhdjdggb.workers.dev
+      Host: wgrcqwtkfyqujs43.ghydgdbdbddvv.workers.dev
 - name: 🇨🇿 捷克 (Czech) 02 - xiaohe
-  server: 194.87.59.29
-  port: 2085
+  server: 153.76.185.159
+  port: 3090
   udp: true
   type: vless
   uuid: ea723504-e8df-4f23-b35f-c93961d5128a
@@ -37,8 +38,8 @@ proxies:
   grpc-opts:
     grpc-service-name: vless
 - name: 🇨🇿 捷克 (Czech) 04 - xiaohe
-  server: 153.76.185.163
-  port: 3090
+  server: 194.87.59.29
+  port: 2085
   udp: true
   type: vless
   uuid: ea723504-e8df-4f23-b35f-c93961d5128a
@@ -55,7 +56,7 @@ proxies:
   reality-opts:
     public-key: Zl6Fe6WYQuaFe_QNUB4qU7nRkGujy7LqjoQ96GO3jUc
   servername: nlll.gaz-service.shop
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: grpc
@@ -71,7 +72,7 @@ proxies:
     public-key: j97RCvxVfMu5XWcXuAc4s8TnBTdl8PQrNFrZDQpAkng
     short-id: b415b8d7a6106ace
   servername: nlll.gaz-service.shop
-  client-fingerprint: firefox
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
