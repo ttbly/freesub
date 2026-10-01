@@ -6,7 +6,7 @@
     {
       "type": "vless",
       "tag": "🇳🇱 荷兰 (Netherlands) 01 (移动家宽) - xiaohe",
-      "server": "31.77.114.212",
+      "server": "aken.nightfall.best",
       "server_port": 443,
       "uuid": "af2bf319-ba88-4fec-8317-2b6a8cee96d1",
       "flow": "xtls-rprx-vision",
