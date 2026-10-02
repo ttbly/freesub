@@ -15,7 +15,7 @@
         "server_name": "cz1.animeteka.info",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -25,12 +25,16 @@
       }
     },
     {
-      "type": "vmess",
+      "type": "hysteria2",
       "tag": "🇨🇿 捷克 (Czech) 02 - xiaohe",
-      "server": "zfd-boardv2.kunlun01dns.com",
-      "server_port": 16280,
-      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
-      "security": "auto"
+      "server": "153.76.190.41",
+      "server_port": 8443,
+      "password": "3a92b39a-5f02-415e-a908-783ec320e83f",
+      "tls": {
+        "enabled": true,
+        "server_name": "speedtestmark.com",
+        "insecure": true
+      }
     },
     {
       "type": "selector",
