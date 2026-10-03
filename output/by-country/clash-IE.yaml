@@ -24,7 +24,7 @@ proxies:
   type: trojan
   password: Trojan@82164024
   sni: ie.tronsg.com
-  skip-cert-verify: false
+  skip-cert-verify: true
 - name: 🇮🇪 爱尔兰 (Ireland) 03 - xiaohe
   server: 198.55.102.59
   port: 4443
@@ -37,7 +37,7 @@ proxies:
     public-key: 9gYnZLxZAPxIKzu9e-cOLBpbCn9p9og9gBodOCh5HB8
     short-id: ce6767c3f1
   servername: vk.com
-  client-fingerprint: qq
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
